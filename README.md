@@ -14,12 +14,7 @@ This repository contains:
 
 **Disclaimer**: This is purely an educational and research project. Nothing here constitutes financial advice.
 
-
-
----------------------------------------------------------------------------------------------------------------
-
-
-
+---------------------------------------------------------------------------------------------
 
 欢迎来到Quant-Odyssey。项目命名为“Odyssey”（奥德赛），意味着这不仅仅是一个代码仓库，更是一份公开的、长期的学习日志。作为一名对金融市场充满热情的前端开发者，我将通过这个项目，从零开始构建一个由人工智能驱动的交易系统。
 
@@ -34,3 +29,50 @@ This repository contains:
 - 用于探索性数据分析和模型原型设计的Jupyter Notebooks。
 
 **免责声明**： 本项目纯粹用于教育和研究目的，所有内容均不构成任何投资建议。
+
+---------------------------------------------------------------------------------------------
+
+``` markdown
+/Quant-Odyssey/
+|
+|-- .gitignore               # 告诉Git忽略哪些文件（非常重要！）
+|-- README.md                # 项目的说明书，你的第一份文档
+|-- requirements.txt         # 项目的Python依赖包列表
+|
+|-- data/                    # 存储数据 (通常不上传到Git)
+|   |-- raw/                 # 原始数据
+|   |-- processed/           # 清洗和处理后的数据
+|
+|-- journal/                 # 你的Markdown学习笔记和日志
+|   |-- 2025/
+|       |-- 08/
+|           |-- 2025-08-21-Project-Initialization.md
+|           |-- 2025-08-24-Pandas-Data-Loading.md
+|       |-- 09/
+|           |-- ...
+|
+|-- notebooks/               # Jupyter Notebooks，用于探索性分析和实验
+|   |-- 01_data_exploration.ipynb
+|   |-- 02_feature_engineering_tests.ipynb
+|   |-- 03_cnn_model_prototype.ipynb
+|
+|-- src/                     # 主要的Python源代码
+|   |-- __init__.py
+|   |-- data_ingestion/      # 数据获取模块
+|   |   |-- api_clients.py
+|   |-- feature_engineering/ # 特征工程模块
+|   |   |-- price_action.py
+|   |   |-- indicators.py
+|   |-- models/              # 机器学习/深度学习模型定义
+|   |   |-- cnn_v1.py
+|   |-- backtesting/         # 回测引擎和策略逻辑
+|   |   |-- engine.py
+|   |   |-- strategies.py
+|   |-- utils/               # 通用工具函数
+|   |   |-- visualization.py
+|   |-- config.py            # 配置文件（如API密钥、路径等）
+|   |-- main.py              # 主程序入口（例如，运行一次回测）
+|
+|-- scripts/                 # 一次性脚本或辅助工具
+|   |-- download_data.py     # 下载历史数据的脚本
+```
